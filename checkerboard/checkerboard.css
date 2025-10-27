@@ -1,0 +1,36 @@
+/* Table CSS */
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  height: 800px;
+  width: 800px;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+}
+
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: black;
+}
+
+/* Div CSS */
+.board {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+  grid-template-rows: repeat(8, 100px);
+  width: 800px;
+  height: 800px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+}
+
+.black {
+  background-color: black;
+}

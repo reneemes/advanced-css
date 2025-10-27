@@ -1,0 +1,29 @@
+.flag {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: repeat(13, 1fr);
+  width: 800px;
+}
+
+.stars {
+  grid-row: 1 / span 7;
+  display: flex;
+}
+
+.stars img {
+  width: 100%;
+  height: auto;
+}
+
+.stripe {
+  grid-column: 1 / -1;
+}
+
+.stripe--red {
+  background-color: red;
+}
+
+.top-right {
+  grid-column-start: 2;
+}
