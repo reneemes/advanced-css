@@ -5,7 +5,30 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: firebrick;
+  color: rgb(178, 34, 34);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  box-shadow: gray 0 2px 8px;
+  min-height: 64px;
+  background-color: rgb(178, 34, 34);
+  width: 100%;
+  text-align: center;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header nav a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .product-container {
@@ -24,34 +47,34 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  margin: 2px;
 }
-
-img {
+.product img {
   border-radius: 20px 20px 0 0;
   width: 100%;
   height: auto;
 }
-
-h3, p, .description {
-  margin: 2px;
-  padding: 0 5px;
+.product h3 {
+  padding: 0 10px;
 }
-
-h3 span {
+.product h3 span {
   color: gray;
+  font-size: 1rem;
 }
-
-.description {
+.product p {
+  padding: 0 10px;
+}
+.product .description {
   width: 90%;
-  height: 80px;
+  height: 50px;
+  margin: 0;
   color: black;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-a {
+.product a {
   border-radius: 40px;
-  background-color: firebrick;
+  background-color: rgb(178, 34, 34);
   color: white;
   padding: 8px;
   font-weight: 600;
@@ -59,8 +82,7 @@ a {
   transition: background-color 0.3s ease;
   margin: 10px;
 }
-
-a:hover {
+.product a:hover {
   background-color: rgb(129, 22, 22);
   cursor: pointer;
-}
+}/*# sourceMappingURL=product-grid.css.map */
